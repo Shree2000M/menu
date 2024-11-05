@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop Menu</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+
+        header {
+            background-color: #FF6347;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Menu Section */
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .cake-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .cake-item:hover {
+            transform: scale(1.05);
+        }
+
+        .cake-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .cake-item h3 {
+            color: #FF6347;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .cake-item p {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .cake-item .price {
+            font-size: 1.2rem;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cake-item {
+                width: 90%;
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .cake-item h3 {
+                font-size: 1.3rem;
+            }
+
+            .cake-item p {
+                font-size: 0.9rem;
+            }
+
+            .cake-item .price {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Logo Image -->
+    <img src="https://via.placeholder.com/150x50?text=Cake+Shop+Logo" alt="Cake Shop Logo">
+    <h1>Welcome to Sweet Delights Cake Shop</h1>
+    <p>Freshly Baked Cakes Just for You!</p>
+</header>
+
+<div class="menu">
+    <div class="cake-item">
+        <img src="https://via.placeholder.com/250" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+        <p>A rich and moist chocolate cake layered with creamy chocolate frosting.</p>
+        <p class="price">$20.00</p>
+    </div>
+
+    <div class="cake-item">
+        <img src="https://via.placeholder.com/250" alt="Vanilla Cake">
+        <h3>Vanilla Cake</h3>
+        <p>Light and fluffy vanilla cake with a smooth vanilla buttercream frosting.</p>
+        <p class="price">$18.00</p>
+    </div>
+
+    <div class="cake-item">
+        <img src="https://via.placeholder.com/250" alt="Strawberry Cake">
+        <h3>Strawberry Cake</h3>
+        <p>Fresh strawberries layered with a soft sponge cake, topped with whipped cream.</p>
+        <p class="price">$22.00</p>
+    </div>
+
+    <div class="cake-item">
+        <img src="https://via.placeholder.com/250" alt="Red Velvet Cake">
+        <h3>Red Velvet Cake</h3>
+        <p>Classic red velvet cake with a tangy cream cheese frosting.</p>
+        <p class="price">$25.00</p>
+    </div>
+
+    <div class="cake-item">
+        <img src="https://via.placeholder.com/250" alt="Carrot Cake">
+        <h3>Carrot Cake</h3>
+        <p>Moist carrot cake with a blend of spices and a creamy frosting.</p>
+        <p class="price">$23.00</p>
+    </div>
+
+    <div class="cake-item">
+        <img src="https://via.placeholder.com/250" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+        <p>Rich and creamy cheesecake with a buttery graham cracker crust.</p>
+        <p class="price">$30.00</p>
+    </div>
+</div>
+
+</body>
+</html>
